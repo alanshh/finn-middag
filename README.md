@@ -40,6 +40,11 @@ Recipe data is then written to JSON and read by Node.js to serve user a random d
 #### Node.js
 	https://nodejs.org/en/download/
 
+# How to run
+#### in root
+	node app.js
+
+**Local app available at** localhost:3000
 
 
 
