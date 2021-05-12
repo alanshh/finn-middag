@@ -4,6 +4,8 @@ Web scraping of recipes is done with Python and the help of packages Selenium an
 
 Recipe data is then written to JSON and read by Node.js to serve user a random dinner recipe from https://gladkokken.no/oppskrifter/middag
 
+### Todo
+CSS
 
 
 # Install prerequisites
