@@ -2,7 +2,6 @@ from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 from bs4 import BeautifulSoup
 import functools
-import re
 import os
 import time
 import pathlib
@@ -11,7 +10,7 @@ import json
 
 class Recipe:
     """
-    Class of recipe from website Gladkokken.no
+    Class of recipe from website gladkokken.no/oppskrifter/middag
 
     Attributes:
         name(str): name of recipe
@@ -30,7 +29,7 @@ url ="https://gladkokken.no/oppskrifter/middag/"
 options = Options()
 options.headless = True
 #Get current directory
-driver = webdriver.Firefox(options=options, executable_path=r'C:\Users\Alan\Downloads\geckodriver-v0.29.1-win64\geckodriver.exe')
+driver = webdriver.Firefox(options=options)
 driver.get(url)
 
 recipes = []
@@ -53,14 +52,13 @@ while True:
         time.sleep(2)
         nextButton.click()
     except Exception as e:
-        print(e)
         break
 #Create json file
 json_dict = {"recipes": []}
 for r in recipes:
     jsonStr = json.dumps(r.__dict__)
     json_dict["recipes"].append(json.loads(jsonStr))
-#Set to current directory and save json file
+#Set to current running directory and save json file
 currentDir = pathlib.Path(__file__).parent.absolute()
 os.chdir(currentDir)
 with open("oppskrifter.json", "w") as write_file:

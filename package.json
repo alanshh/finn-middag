@@ -1,5 +1,5 @@
 {
-  "name": "middagsgenerator",
+  "name": "finn-middag",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "alanshh",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.19.0",
     "connect": "^3.7.0",
