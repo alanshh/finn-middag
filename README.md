@@ -1,7 +1,8 @@
 
 # Finn middag: get random dinner recipe
-Web scraping is done with Python and the help of packages Selenium and BeautifulSoup.
-Recipe data is then written to JSON and read by Node.js to give user a random dinner recipe from https://gladkokken.no/oppskrifter/middag
+Web scraping of recipes is done with Python and the help of packages Selenium and BeautifulSoup.
+
+Recipe data is then written to JSON and read by Node.js to serve user a random dinner recipe from https://gladkokken.no/oppskrifter/middag
 
 
 
