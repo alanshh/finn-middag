@@ -1,0 +1,20 @@
+<html>
+<body>
+    <form action="/index"> 
+        <button>Send</button> 
+    </form> 
+    <script> 
+        $("form").submit(function(e) { 
+          e.preventDefault(); 
+          $.ajax({ 
+            url: "/index",
+            type: "GET",
+            success: function(responseData) { 
+            }, 
+            error: console.error 
+          }); 
+        }); 
+      </script> 
+</body>
+
+</html>
