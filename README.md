@@ -1,4 +1,4 @@
-
+Hosted at https://finn-middag.herokuapp.com/
 # Finn middag: get random dinner recipe
 Web scraping of recipes is done with Python and the help of packages Selenium and BeautifulSoup.
 
