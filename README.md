@@ -41,7 +41,7 @@ Recipe data is then written to JSON and read by Node.js to serve user a random d
 #### in root
 	node app.js
 
-**Local app available at** localhost:3000
+**Local app available at** localhost:8080
 
 
 
