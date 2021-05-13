@@ -17,11 +17,13 @@ app.get("/index", function(req, res) {
         const recipes = JSON.parse(jsonString)
         var nrRecipes = Object.keys(recipes.recipes).length
         // send random recipe to client
-        res.send(recipes.recipes[random(0, nrRecipes)]);
+        res.json(recipes.recipes[random(0, nrRecipes)])
+        //res.sendStatus(200)
+       // res.send(recipes.recipes[random(0, nrRecipes)]);
+        //res.end();
     })
   
-}); 
-app.listen(port) 
+}).listen(port) 
 console.log("listening to server on port:", port); 
 
 
